@@ -1,0 +1,211 @@
+html,body{
+	margin: 0;
+	line-height: 1;
+	background-color: #22252C;
+
+	}
+
+/* ---- Table of Contents
+
+1) Navigation Bar
+2) Main Page
+3) About Me Page
+4) Experience Page
+5) Contact Page 
+
+---- */
+
+/* ---- Navigation Bar ---- */
+
+.navbar, .navbar-fixed-top .navbar-right {
+	position: fixed right;
+	top: 20px;
+	right: 30px;
+	margin: 0 auto;
+	width: 100.77%;
+	overflow: hidden;
+    background-color: rgba( 0, 0, 0, .5 );
+    float: right; 
+}
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0; 
+	text-align: center;
+}
+
+.navbar li{
+	font-size: 16px;
+	font-weight:400;
+	font-family: "Josefin Sans", sans-serif;
+		letter-spacing: 1px;
+	display: inline-block;
+	margin-right: 25px;
+	text-align: center;
+
+
+}
+
+.navbar a{
+	color: #e4e6e5;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	float: right;
+	
+}
+
+li > a {
+	position: relative;
+	color: #000;
+    text-decoration: none;
+}
+
+li > a:hover{
+	color: #e4e6e5;
+	background-color: none;
+	text-decoration: none;
+}
+
+li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 2px;
+	left: 0;
+	background-color:  #00e68a;
+	visibility: hidden;
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.navbar a:visited, .navbar a:link {
+	color: #e4e6e5;
+	text-decoration: none;
+	
+}
+
+.navbar li:visited{
+	color: #e4e6e5;
+	text-decoration: none;
+}
+
+
+
+/* ---- Main Page ---- */
+
+#left{
+	padding-top: 954px;
+	background-color: #22252C;
+	height: 100%
+}
+
+#right{
+	height: 974px;
+	padding-top: 100px;
+	text-align: center;
+	background-color: #22252C;
+}
+
+
+#right h1{
+	font-family:"Josefin Sans";
+	color: #0055ff;
+	margin: 0 0 15px 0;
+
+}
+
+#right h3{
+	font-family: "Open Sans";
+	color: #e6F2FF;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+.picture{
+	background-color: #F1F1F1;
+	background: url(https://farm4.staticflickr.com/3792/32758578193_f4213cf406_h.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+
+/* ---- About Me ---- */
+
+#about-left{
+	padding-top: 974px;
+	height: 100%;
+	background-color: #062F4F;
+}
+
+#about-right{
+	height: 974px;
+	padding-top: 100px;
+	text-align: center;
+	background-color: #062F4F;
+
+}
+
+#about-right h1{
+	color: #ffff66;
+	font-family: "Josefin Sans";
+
+}
+
+#about-right h3{
+	margin-left: 200px;
+	margin-right: 200px;
+	color: #b3daff
+}
+/* ---- Experience ---- */
+
+#experience-left{
+	padding-top: 974px;
+	height: 99%;
+	background-color: #328CC1;
+}
+
+#experience-right{
+	height: 974px;
+	padding-top: 100px;
+	text-align: center;
+	background-color: #328CC1;
+}
+
+#experience-right h1{
+	color: #ff9900;
+	font-family: "Josefin Sans"; 
+}
+
+#experience-right h3{
+
+	color: #000
+}
+
+/* ---- Contact ---- */
+#contact-left{
+	padding-top: 100px;
+	height: 100%;
+	background-color: #e6F2FF;
+}
+
+#contact-right{
+	height: 100px;
+	padding-top: 100px;
+	text-align: center;
+	background-color: #e6F2FF;
+}
+
+
+@media screen and (max-width: 600px){
+    .navbar li.right, 
+    .navbar li {float: none !important;}
